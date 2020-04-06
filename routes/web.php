@@ -36,3 +36,5 @@ Route::delete("/task/{task}", function(\App\Task $task){
     $task->delete();
     return redirect("/");
 });
+
+Route::get('/contacts',  "ContactsController@index");
